@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Blog</title>
+    <!-- bootstrap link     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+    <!-- header area  start-->
+
+    <header class="p-3 mb-3  ">
+        <div class=" container ">
+            <div
+                class=" mb-4 d-flex flex-wrap align-items-center justify-content-sm-between justify-content-lg-between ">
+                <a href="/" class="mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <span class="border border-primary bg-primary p-2 text-white me-1">News </span> & Blog
+                </a>
+
+
+                <div class="text-end d-flex ps-2 ">
+
+                    <a class="dropdown-item ps-2 text-decoration-underline " href="index.html">News </a>
+                    <a class="dropdown-item ps-4" href="blog.html">Blog</a>
+
+                    <a href="#" class="d-block  text-decoration-none ps-4">
+                        <img src="img/header.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+
+    <!-- header area  end-->
+    <main>
+        <!-- categories length area start -->
+        <section>
+            <div class="container input  mb-4 text-dark" id="length">
+
+            </div>
+        </section>
+        <!-- categories length area end -->
+
+
+        <!-- category section start -->
+
+        <section>
+            <div class="container ">
+                <div class="d-flex flex-column justify-content-evenly d-lg-flex flex-lg-row" id="show-categories">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- category section end -->
+
+        <!-- view and trendy section start -->
+        <header class="p-3 mb-3 ">
+            <div class=" container ">
+                <div class=" mb-4 d-flex flex-wrap align-items-center justify-content-between justify-content-between ">
+                    <div class="input-item extra">
+                        <label for="Sort">Sort By View:</label>
+                        <select name="View" id="Sort">
+                            <option value="default">default</option>
+
+                        </select>
+                    </div>
+
+
+
+                    <div class="text-end d-flex  justify-content-evenly">
+
+                        <button type="button" class="btn btn-primary text-white me-5 ps-3 pe-3">Trendy</button>
+                        <button type="button" class="btn  border border-info">Today's Pick</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </header>
+        <!-- view and trendy section end -->
+
+        <!-- spinner area start -->
+        <!-- loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border  text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- spinner area end -->
+
+
+        <!-- News area start -->
+        <section id="news">
+
+        </section>
+
+        <!-- News area end -->
+
+
+
+        <!-- modal contents -->
+        <section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="newsDetailModal" tabindex="-1" aria-labelledby="Newstitle" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Newstitle"></h5>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div id="news-details" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- footer area start -->
+
+    <footer class="bg-dark p-5 mt-5">
+        <div class="container ">
+
+            <div class="col-md-12 text-center">
+                <span class="text-white">© 2022 . All rights reserved By Udoy</span>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!-- footer area end -->
+
+
+
+    <!-- bootstrap link     -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- javascript link -->
+
+    <script src="Js/toggole.js"></script>
+    <script src="Js/news.js"></script>
+    <script src="Js/details.js"></script>
+    <script src="Js/category.js"></script>
+</body>
+
+
+</html>
